@@ -1,0 +1,6 @@
+virtual env naraEnv -p python3
+
+source myEnv/bin/activate
+
+export FLASK_APP = app.py #once API is ready
+flask run #starts running 
