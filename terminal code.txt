@@ -1,0 +1,16 @@
+docker pull postgres
+docker run --name postgres-nara -p 5432:5432 -e POSTGRES_PASSWORD password postgres
+docker ps #liste alle laufende Containers mit deren image
+
+docker exec -it postgres-nara /bin/bash
+
+CREATE TABLE movies (title varchar(20), genre varchar(255), duration int )
+
+INSERT INTO movies values("Adam","action",120)
+
+\dt #um bestehende tabelle anzusehen, im aktullen container
+
+exit #container terminal zu verlassen
+
+docker logs postgres-nara
+        
