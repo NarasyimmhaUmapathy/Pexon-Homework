@@ -4,3 +4,5 @@ source naraEnv/bin/activate
 
 export FLASK_APP = app.py #once API is ready
 flask run #starts running 
+
+#on Postman, use localhost:5000/movies and upload some movies from movies.txt file, then test get and post methods.
