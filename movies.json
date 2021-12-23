@@ -1,0 +1,12 @@
+[
+  {
+    "title": "James Bond",
+    "genre": "Action",
+    "year": "2000"
+  },
+  {
+    "title": "Star Wars",
+    "genre": "SciFi",
+    "year": "2001"
+  }
+]
