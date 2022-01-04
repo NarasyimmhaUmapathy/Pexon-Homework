@@ -1,0 +1,4 @@
+target1 ansible_host=40.76.33.168 ansible_ssh_pass=jarhead9212JAR
+
+[target1]
+40.76.33.168
