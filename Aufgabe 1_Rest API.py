@@ -53,9 +53,9 @@ def each_movie(title):
         movie = cursor.fetchall()
         
         if movie is not None:
-           return make_response(jsonify(movie))
+           return make_response(jsonify(movie),205)
         else:
-           return "Movie not existent",205
+           return "Movie not existent"
     
     
         
@@ -63,7 +63,7 @@ def each_movie(title):
         sql = """ DELETE FROM movies WHERE title=? """
         conn.execute(sql, (title,))
         conn.commit()
-        return "The movie with title: {} has been deleted.".format(title), 200
+        return "The movie with title: {} has been deleted.".format(title), 206
 
     
 
